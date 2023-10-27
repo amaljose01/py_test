@@ -8,5 +8,5 @@ new_df = df2.loc[:, ['id','name','tenantId','status','maxRetry','executionCount'
 #new_df.to_csv('offboarding_pending.csv')
 
 pvtlist = df.pivot_table(index=['context'], aggfunc='size')
-print(pvtlist)
+print(new_df)
 #pvtlist.to_csv('context_csv.csv')
