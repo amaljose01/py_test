@@ -10,7 +10,7 @@ df2= df1.sort_values(by='createdAt', ascending=False)
 new_df = df2.loc[:, ['id','name','tenantId','status','maxRetry','executionCount','context']]
 #new_df.to_csv('offboarding_pending.csv')
 
-print(tabulate(new_df, headers='keys', tablefmt='psql'))
+print(tabulate(new_df)
 
 #pvtlist = df.pivot_table(index=['context'], aggfunc='size')
 #print(new_df)
