@@ -15,4 +15,4 @@ print(tabulate(new_df, headers='keys', tablefmt='psql'))
 #print(new_df)
 #pvtlist.to_csv('context_csv.csv')
 
-os.remove('offboarding_pending.csv'
+#os.remove('offboarding_pending.csv'
