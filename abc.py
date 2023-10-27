@@ -7,7 +7,8 @@ df = pd.read_json ('/Users/I347708/Desktop/OFB/us10trial_jso.json')
 
 df1= df.loc[df['type'].isin(['OFFBOARDING'])]
 df2= df1.sort_values(by='createdAt', ascending=False)
-new_df = df2.loc[:, ['id','name','tenantId','status','maxRetry','executionCount','context']]
+#new_df = df2.loc[:, ['id','name','tenantId','status','maxRetry','executionCount','context']]
+new_df = df2.loc[:, ['id','name','tenantId','status','maxRetry','executionCount']]
 #new_df.to_csv('offboarding_pending.csv')
 
 #print(tabulate(new_df)
